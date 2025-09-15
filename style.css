@@ -1,0 +1,121 @@
+/* General */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  background: linear-gradient(to right, #001f3f, #003f5c);
+  text-align: center;
+  padding-top: 100px;
+  color: #fff;
+}
+.profile-img {
+  width: 180px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease-in-out;
+}
+.profile-img:hover {
+  transform: scale(1.1);
+}
+
+/* Typing Effect */
+.typing {
+  color: #0dcaf0;
+  font-weight: bold;
+  font-size: 1.7rem;
+  margin-top: 15px;
+  min-height: 30px;
+}
+
+/* Services */
+.service-card {
+  border: 2px solid transparent;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  transition: all 0.4s ease;
+}
+.service-card:hover {
+  border: 2px solid #0dcaf0;
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* Projects */
+.project-img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+.project-img img {
+  transition: transform 0.4s ease;
+  border-radius: 12px;
+}
+.project-img:hover img {
+  transform: scale(1.1);
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  transition: opacity 0.4s ease;
+}
+.project-img:hover .overlay {
+  opacity: 1;
+}
+.overlay a {
+  background: #0dcaf0;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+.overlay a:hover {
+  background: #0096b6;
+}
+
+.project-card {
+  border: none;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* About Me */
+.aboutme {
+  color: #003f5c;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-top: 20px;
+}
+/* Section animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
